@@ -9,7 +9,6 @@
   - peça para o usuário informar uma quantidade inteira de litros
   - calcule e imprima o consumo do carro em quilômetros por litro (km/l)
   - guarde o resultado em uma variável do tipo double
-
   EXEMPLO:
   - um carro que percorreu 100 km usando 6 litros deve apresentar um
     resultado quebrado, aproximadamente 16.666666 km/l

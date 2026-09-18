@@ -16,8 +16,39 @@
   - calcule e imprima também quantas moedas de 50, 25, 10, 5 e 1 centavo
     podem ser obtidas
 -------------------------------------------------------------------*/
+import java.util.Scanner;
 public class Ex01_5 {
     public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("informe um valor em reais: ");
+        int valor = teclado.nextInt();
+
+
+           int notas50 = valor / 50;
+           valor = valor % 50;
+
+           int notas10 = valor / 10;
+           valor = valor % 10;
+
+           int notas5 = valor / 5;
+           valor = valor % 5;
+
+           int notas2 = valor / 2;
+           valor = valor % 2;
+
+           System.out.println("notas de 50: " + notas50);
+           System.out.println("notas de 10: " + notas10);
+           System.out.println("notas de 5: " + notas5);
+           System.out.println("notas de 2: " + notas2);
+
+        System.out.println("valor que sobrou: " + valor);
+
+           teclado.close();
+
+
+
 
     }
 }
