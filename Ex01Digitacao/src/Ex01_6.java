@@ -20,8 +20,27 @@
   - exemplos: (double) quilometros / litros 
     ou quilometros / (double) litros
 -------------------------------------------------------------------*/
+import java.util.Scanner;
 public class Ex01_6 {
     public static void main(String[] args) {
 
+        Scanner teclado = new Scanner(System.in);
+
+            int quilometros;
+            int litros;
+            double consumo;
+
+            System.out.print("informe a quantidade de quilometros: ");
+            quilometros = teclado.nextInt();
+
+            System.out.print("informe a quantidade de litros: ");
+            litros = teclado.nextInt();
+
+            consumo = (double)
+          quilometros / litros;
+
+            System.out.println("o consumo do carro é: "+consumo+"km/1");
+
+                teclado.close();
     }
 }
