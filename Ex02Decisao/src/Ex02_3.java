@@ -17,6 +17,9 @@ import java.util.Random;
   - adicione uma decisão para reclamar se a pessoa digitar um numero
     que não esteja entre 1 e 3
 -------------------------------------------------------------------*/
+import java.util.Random;
+import java.util.Scanner;
+
 public class Ex02_3 {
     public static void main(String[] args) {
         // gera um numero aleatorio entre 1 e 3
@@ -24,5 +27,20 @@ public class Ex02_3 {
         int numeroSorteado = random.nextInt(3) + 1;
 
         // comece seu código aqui
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("digite um numero entre 1 e 3: ");
+        int chute = scanner.nextInt();
+
+        if (chute < 1 || chute > 3){
+            System.out.println("numero invalido! digite 1 e 3: ");
+        }else if (chute == numeroSorteado) {
+
+            System.out.println("parabens! voce acertou!");
+        } else {
+            System.out.println("voce errou!");
+
+            System.out.println("o numero sorteado foi: " + numeroSorteado);
+        }
     }
 }
