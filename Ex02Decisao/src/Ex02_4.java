@@ -24,9 +24,39 @@
       se a pessoa for estudante e false caso contrário
     - depois de terminar, conceda desconto de 10% para pessoas 
       com mais de 60 anos (mas não acumula se for estudante)
--------------------------------------------------------------------*/
+-------------------------------------------------------------
+ */
+import java.util.Scanner;
 public class Ex02_4 {
     public static void main(String[] args) {
 
+        Scanner teclado = new Scanner(System.in);
+
+        // valor normal de entrada
+        double valorEntrada = 30.00;
+
+        // pergunta idade
+        System.out.print("informe sua idade: ");
+        int idade = teclado.nextInt();
+
+        // pergunta se a pessoa é estudante
+        System.out.print("voce é estudante? (S/N): ");
+            char resposta = teclado.next().charAt(0);
+
+        // verificar se é estudante
+        boolean estudante =  resposta == 'S' || resposta == 's';
+
+        // calcula o valor de entrada
+        if (idade < 18 || estudante) {
+            valorEntrada = valorEntrada / 2;
+
+        } else if (idade > 60) {
+            valorEntrada = valorEntrada * 0.90;
+        }
+
+        // mostra valor final
+        System.out.println("valor da entrada: R$ " + valorEntrada);
+
+        }
     }
-}
+
