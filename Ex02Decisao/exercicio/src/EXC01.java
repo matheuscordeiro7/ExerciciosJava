@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class novosExercicios {
+public class EXC01 {
     public static void main(String[] args) {
         // pede pra digitar uma palavra varias vezes
         // so para quando a pessoa responder "banana"
