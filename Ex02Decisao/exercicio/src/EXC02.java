@@ -26,7 +26,7 @@ public class EXC02 {
 
             double media = somaAltura / quantidade;
 
-        System.out.printf("A media das alturas é: %.2f", media);
+        System.out.printf("A media da altura das %d pessoas é: %.2f",quantidade, media);
 
         }
     }
