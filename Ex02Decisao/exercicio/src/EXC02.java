@@ -10,16 +10,14 @@ public class EXC02 {
         String resposta;
 
         do {
-            System.out.print("imforme a altura: ");
+            System.out.print("informe a altura: ");
             altura = teclado.nextDouble();
 
             somaAltura += altura;
             quantidade++;
 
-            teclado.nextLine();
-
             System.out.print("tem mais alturas? (sim/nao): ");
-            resposta = teclado.nextLine();
+            resposta = teclado.next();
 
         }while
         (resposta.equalsIgnoreCase("sim"));
